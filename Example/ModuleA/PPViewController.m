@@ -8,6 +8,8 @@
 
 #import "PPViewController.h"
 
+#import <MGJRouter/MGJRouter.h>
+
 @interface PPViewController ()
 
 @end
@@ -17,13 +19,33 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-	// Do any additional setup after loading the view, typically from a nib.
+	
+    UIButton *skipButton = [UIButton buttonWithType:UIButtonTypeSystem];
+    [skipButton setTitle:@"跳转" forState:UIControlStateNormal];
+    [skipButton sizeToFit];
+    skipButton.center = CGPointMake(100, self.view.center.y);
+    [skipButton addTarget:self action:@selector(skipAction) forControlEvents:UIControlEventTouchUpInside];
+    [self.view addSubview:skipButton];
+    
+    UIButton *calculateButton = [UIButton buttonWithType:UIButtonTypeSystem];
+    [calculateButton setTitle:@"求和" forState:UIControlStateNormal];
+    [calculateButton sizeToFit];
+    calculateButton.center = CGPointMake(150, self.view.center.y);
+    [calculateButton addTarget:self action:@selector(calculateAction) forControlEvents:UIControlEventTouchUpInside];
+    [self.view addSubview:calculateButton];
 }
 
-- (void)didReceiveMemoryWarning
-{
-    [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
+- (void)skipAction {
+    // #define A_PAGE @"A://page/:id"
+    [MGJRouter openURL:@"A://page/404" completion:^(id result) {
+        NSLog(@"Result: %@", result);
+    }];
+}
+
+- (void)calculateAction {
+//    #define A_FUNCTION_SUM @"A://function/sum"
+    NSNumber *result = [MGJRouter objectForURL:@"A://function/sum?a=1&b=2"];
+    NSLog(@"Result: %@", result);
 }
 
 @end

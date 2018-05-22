@@ -1,0 +1,31 @@
+PODS:
+  - FBSnapshotTestCase (2.1.4):
+    - FBSnapshotTestCase/SwiftSupport (= 2.1.4)
+  - FBSnapshotTestCase/Core (2.1.4)
+  - FBSnapshotTestCase/SwiftSupport (2.1.4):
+    - FBSnapshotTestCase/Core
+  - MGJRouter (0.10.0)
+  - ModuleA (0.1.0):
+    - MGJRouter
+
+DEPENDENCIES:
+  - FBSnapshotTestCase
+  - ModuleA (from `../`)
+
+SPEC REPOS:
+  https://github.com/CocoaPods/Specs.git:
+    - FBSnapshotTestCase
+    - MGJRouter
+
+EXTERNAL SOURCES:
+  ModuleA:
+    :path: "../"
+
+SPEC CHECKSUMS:
+  FBSnapshotTestCase: 094f9f314decbabe373b87cc339bea235a63e07a
+  MGJRouter: 15d94541eb2cc81eff7d577337288feb7ae9575f
+  ModuleA: af5bf3f226ef10a0f402697fec7b3b1ba05aa9d9
+
+PODFILE CHECKSUM: 36877e988f161b9c99e21aff3777cd94b07c0068
+
+COCOAPODS: 1.5.0
