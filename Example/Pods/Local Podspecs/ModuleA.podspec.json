@@ -1,8 +1,8 @@
 {
   "name": "ModuleA",
-  "version": "0.1.0",
-  "summary": "A short description of ModuleA.",
-  "description": "TODO: Add long description of the pod here.",
+  "version": "2.1.1",
+  "summary": "Compontents of ModuleA.",
+  "description": "ModuleA provider A pages and A functions.",
   "homepage": "https://github.com/dcwy1130/ModuleA",
   "license": {
     "type": "MIT",
@@ -13,14 +13,14 @@
   },
   "source": {
     "git": "https://github.com/dcwy1130/ModuleA.git",
-    "tag": "0.1.0"
+    "tag": "2.1.1"
   },
   "platforms": {
     "ios": "8.0"
   },
   "source_files": "ModuleA/Classes/**/*",
   "dependencies": {
-    "MGJRouter": [
+    "YRouter": [
 
     ]
   }

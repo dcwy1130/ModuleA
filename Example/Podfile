@@ -1,5 +1,8 @@
 use_frameworks!
 
+source 'https://github.com/dcwy1130/PrivatePods.git'
+source 'https://github.com/CocoaPods/Specs.git'
+
 target 'ModuleA_Example' do
   pod 'ModuleA', :path => '../'
 
@@ -7,5 +10,7 @@ target 'ModuleA_Example' do
     inherit! :search_paths
 
     pod 'FBSnapshotTestCase'
+    #    :commit => '2.1.0'  :tag => '2.1.0'
+#    pod 'ModuleB', :git => 'https://github.com/dcwy1130/ModuleB', :branch => 'develop'
   end
 end

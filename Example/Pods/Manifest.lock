@@ -4,9 +4,9 @@ PODS:
   - FBSnapshotTestCase/Core (2.1.4)
   - FBSnapshotTestCase/SwiftSupport (2.1.4):
     - FBSnapshotTestCase/Core
-  - MGJRouter (0.10.0)
-  - ModuleA (0.1.0):
-    - MGJRouter
+  - ModuleA (2.1.1):
+    - YRouter
+  - YRouter (2.1.1)
 
 DEPENDENCIES:
   - FBSnapshotTestCase
@@ -15,7 +15,8 @@ DEPENDENCIES:
 SPEC REPOS:
   https://github.com/CocoaPods/Specs.git:
     - FBSnapshotTestCase
-    - MGJRouter
+  https://github.com/dcwy1130/PrivatePods.git:
+    - YRouter
 
 EXTERNAL SOURCES:
   ModuleA:
@@ -23,9 +24,9 @@ EXTERNAL SOURCES:
 
 SPEC CHECKSUMS:
   FBSnapshotTestCase: 094f9f314decbabe373b87cc339bea235a63e07a
-  MGJRouter: 15d94541eb2cc81eff7d577337288feb7ae9575f
-  ModuleA: af5bf3f226ef10a0f402697fec7b3b1ba05aa9d9
+  ModuleA: 5f750e23d337b93d6cfedcf295920b26bfc8d733
+  YRouter: 862d685fb9b35d8b6c4f27b8fc39fead4374f997
 
-PODFILE CHECKSUM: 36877e988f161b9c99e21aff3777cd94b07c0068
+PODFILE CHECKSUM: 53571550c26af8b08518fe52fb427c4b276290b4
 
 COCOAPODS: 1.5.0

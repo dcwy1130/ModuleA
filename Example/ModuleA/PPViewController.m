@@ -8,7 +8,7 @@
 
 #import "PPViewController.h"
 
-#import <MGJRouter/MGJRouter.h>
+#import <YRouter/YRouter.h>
 
 @interface PPViewController ()
 
@@ -37,14 +37,14 @@
 
 - (void)skipAction {
     // #define A_PAGE @"A://page/:id"
-    [MGJRouter openURL:@"A://page/404" completion:^(id result) {
+    [YRouter openURL:@"A://page/404" completion:^(id result) {
         NSLog(@"Result: %@", result);
     }];
 }
 
 - (void)calculateAction {
 //    #define A_FUNCTION_SUM @"A://function/sum"
-    NSNumber *result = [MGJRouter objectForURL:@"A://function/sum?a=1&b=2"];
+    NSNumber *result = [YRouter objectForURL:@"A://function/sum?a=1&b=2"];
     NSLog(@"Result: %@", result);
 }
 
